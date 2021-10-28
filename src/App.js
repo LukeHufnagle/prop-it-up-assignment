@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import PropItUp from "./components/PropItUp";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PropItUp 
+        firstName = {"Jane"}
+        lastName = {"Doe"}
+        age = {45}
+        hColor = {"Black"}
+      >
+      </PropItUp>
+      <PropItUp 
+        firstName = {"John"}
+        lastName = {"Smith"}
+        age = {88}
+        hColor = {"Brown"}
+      >
+      </PropItUp>
+      <PropItUp 
+        firstName = {"Millard"}
+        lastName = {"Fillmore"}
+        age = {50}
+        hColor = {"Brown"}
+      >
+      </PropItUp>
+      <PropItUp 
+        firstName = {"Maria"}
+        lastName = {"Smith"}
+        age = {62}
+        hColor = {"Brown"}
+      >
+      </PropItUp>
     </div>
   );
 }
